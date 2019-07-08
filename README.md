@@ -5,9 +5,13 @@
 
 eg.
 1）这里一个html所包含的js文件内的一个public方法 
+
 ![](1.png) 
+
 2）这是一个.m（iOS）文件内的一个WebView的调用1）中js方法的写法 
+
 ![](2.png) 
+
 3）那么在js的对应方法中，就会得到来自iOS的参数 
 ★ 完成 
  
@@ -15,7 +19,9 @@ eg.
 ### 原理：iOS端的WebView的协议函数回调可以获取到其内部html元素的变化以及相应值,JS端只需变化内部元素即可 
  
 步骤一：JS端的处理 
+
 ![](11.png) 
+
 步骤二：JS端添加子元素后iOS端的回调 
 ``` 
 WebView   -   UIWebViewDelegate 
